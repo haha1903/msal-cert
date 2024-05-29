@@ -1,0 +1,21 @@
+[package]
+name = "msal-cert"
+version = "0.1.0"
+edition = "2021"
+description = "A library for handling Microsoft Authentication Library (MSAL) certificates."
+license = "MIT"
+documentation = "https://docs.rs/msal-cert"
+homepage = "https://github.com/haha1903/msal-cert"
+repository = "https://github.com/haha1903/msal-cert"
+
+[dependencies]
+jwt = { version = "0.16.0", features = ["openssl"] }
+hmac = "0.12.1"
+sha2 = "0.10.8"
+openssl = { version = "0.10.64", features = ["vendored"] }
+base64 = "0.22.0"
+serde_json = "1.0.114"
+serde = { version = "1.0.197", features = ["derive"] }
+uuid = { version = "1.8.0", features = ["v4"] }
+reqwest = { version = "0.12.1", features = ["json"] }
+tokio = { version = "1.36.0", features = ["full"] }
